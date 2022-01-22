@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bYellow: hsl(71, 73%, 54%);
+  --lGray: hsl(204, 43%, 93%);
+  --grayBlue: hsl(218, 22%, 67%);
+  --dCyan: rgb(0, 139, 139);
+}
+
+body {
+  background-color: var(--lGray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 30px;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+.title {
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: var(--bYellow);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content {
+  color: var(--grayBlue);
+  margin: 15px 0 15px 0;
+}
+
+.sub-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-card-1 {
+  background-color: var(--dCyan);
+  width: 100%;
+  padding: 30px;
+  line-height: 1.5;
+}
+
+.sub-card-1-title {
+  font-weight: 700;
+  color: var(--lGray);
+}
+
+.sub-card-1-subtitle {
+  color: var(--lGray);
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.sub-card-1-subtitle span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.sub-card-1-content {
+  font-size: 16px;
+  color: var(--lGray);
+}
+
+.btn {
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  width: 80%;
+  outline: none;
+  background-color: var(--bYellow);
+  border: 1px solid var(--bYellow);
+  border-radius: 10px;
+  color: var(--lGray);
+  font-size: 16px;
+  font-weight: 700;
+}
+.sub-card-2 {
+  background-color: var(--cyan);
+  width: 100%;
+  padding: 30px;
+  line-height: 1.5;
+  border-radius: 0px 0px 10px 10px;
+  color: var(--lGray);
+}
+
+.sub-card-2-title {
+  padding-bottom: 20px;
+}
+li {
+  list-style: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 769px) {
+  .sub-card {
+    flex-direction: row;
+  }
+  .sub-card-1 {
+    width: 50%;
+    border-radius: 0px 0px 0px 10px;
+  }
+  .sub-card-2 {
+    width: 50%;
+    border-radius: 0px 0px 10px 0px;
+  }
+}
