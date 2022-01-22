@@ -20,7 +20,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 ### Links
 
 - Solution URL: https://github.com/NitiMittal/single-price-grid-frontend.io
-- Live Site URL:
+- Live Site URL: https://single-price-grid-demo.netlify.app/
 
 ## My process
 
